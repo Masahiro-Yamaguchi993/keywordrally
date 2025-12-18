@@ -175,11 +175,11 @@
 
       const ok = ANSWERS.map(normalize).includes(input);
       if (ok) {
-        show(true, "✅ 正解！");
+        show(true, "✅ せいかい！おめでとう！！");
         playSound(soundOK);
         startConfetti(1800); // ←紙吹雪の表示時間（ms）
       } else {
-        show(false, "❌ 不正解（もう一度）");
+        show(false, "❌ ざんねん、ちがうよ。");
         playSound(soundNG);
       }
     };
@@ -198,5 +198,6 @@
   </script>
 </body>
 </html>
+
 
 
